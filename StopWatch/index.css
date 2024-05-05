@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(72, 70, 70);
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  row-gap: 30px;
+  overflow: hidden;
+}
+.stop-watch-css{
+  width: 250px;
+  height: 250px;
+  border: none;
+  background-color: brown;
+  border-radius: 125px;
+}
+p{
+  text-align: center;
+  margin-top: 90px;
+  font-size: 60px;
+}
+.btns{
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+button{
+  font-size: 20px;
+  border: none;
+  padding: 8px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.start-btn-css{
+  background-color: rgb(133, 241, 133);
+}
+.reset-btn-css{
+  background-color: burlywood;
+}
+.pause-btn{
+  background-color: red;
+}
+
+@keyframes floatFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+h1 {
+  color: rgb(244, 161, 102);
+  animation: floatFromLeft 5s linear infinite; /* Adjust animation duration as needed */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
